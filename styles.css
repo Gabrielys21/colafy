@@ -1,0 +1,66 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: #191414; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  #song-list {
+    margin: 20px 0;
+  }
+  
+  .player button {
+    background-color: #2043df;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .player button:hover {
+    background-color: #1a36b5;
+  }
+  
+  #now-playing {
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+  
+  .guitar-container {
+    margin-top: 20px;
+  }
+  
+  .guitar {
+    width: 100px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .guitar.playing {
+    animation: shake 0.5s infinite alternate;
+  }
+  
+  @keyframes shake {
+    from {
+      transform: rotate(-5deg);
+    }
+    to {
+      transform: rotate(5deg);
+    }
+  }
+  
